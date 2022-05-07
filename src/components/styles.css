@@ -45,3 +45,50 @@
     background-color: #000;
     box-shadow: 0 0 5px #000;
 }
+
+.todos {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.todo_card{
+    display: flex;
+    width: 50%;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #388ae2;
+    border: none;
+    justify-content: space-between;
+}
+
+.todo_card--text{
+    color: #fff;
+}
+
+.icon{
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media (max-width: 12000px) {
+    .todo_card{
+        width: 40%;
+    }
+}
+
+@media (max-width: 720px) {
+    .input {
+        width: 95%;
+    }
+    .todos{
+        width: 95%;
+    }
+    .todo_card{
+        width: 100%;
+    }
+}
